@@ -15,9 +15,8 @@ from rd;
 
 -- 1. What is the trend of motor collisions over the years?
 
-select year(DATE) as Year, count(hood_158) as Collisions
+select year(DATE) as Year, count(DISTINCT CONCAT(DATE, ' ', TIME)) as Collisions
 from mvc2
-where row_num=1
 group by 1
 order by 2 desc;
 
@@ -142,3 +141,20 @@ where m.DATE>'2022-12-31'
 group by 1
 order by 3, 2, 4
 limit 10;
+
+-- KPI Cards
+
+-- Collision
+
+select count(DISTINCT CONCAT(DATE, ' ', TIME)) as 'Total Collisions'
+from mvc2;
+
+-- Crime
+
+select sum(Crime_2019+Crime_2020+Crime_2021+Crime_2022+Crime_2023) as 'Total Crime'
+from ncr;
+
+-- Average Rent
+
+select Avg(average_rent) as 'Average Rent'
+from rdy;
