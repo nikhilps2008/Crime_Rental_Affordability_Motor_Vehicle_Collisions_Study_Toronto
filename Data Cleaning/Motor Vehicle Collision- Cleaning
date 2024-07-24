@@ -5,7 +5,6 @@ from motor_vehicle_collisions;
 -- Standardize the data
 -- Remove Null Values or Blank Values
 -- Remove any Unwanted Columns
-
 -- Creating a new table for the staging process
 
 create table MVC
@@ -19,15 +18,12 @@ select *
 from mvc;
 
 Select * , row_number() over(partition by DATE,TIME,STREET1,STREET2,DISTRICT,HOOD_158,DIVISION) as row_num
-from mvc
-where INVTYPE='Driver'; 
+from mvc; 
 
-With duplicate_cte as(Select * , row_number() over(partition by DATE,TIME,STREET1,STREET2,DISTRICT,HOOD_158,DIVISION) as row_num
-from mvc
-where INVTYPE='Driver')
+With duplicate_cte as(Select * , row_number() over(partition by _id,DATE,TIME,STREET1,STREET2,DISTRICT,HOOD_158,DIVISION) as row_num
+from mvc)
 select *
-from duplicate_cte
-where row_num > 1;
+from duplicate_cte;
 
 CREATE TABLE `mvc2` (
   `_id` int DEFAULT NULL,
@@ -86,19 +82,10 @@ from mvc2;
 
 insert into mvc2
 Select * , row_number() over(partition by DATE,TIME,STREET1,STREET2,DISTRICT,HOOD_158,DIVISION) as row_num
-from mvc
-where INVTYPE='Driver'; 
+from mvc; 
 
 select *
 from mvc2;
-
-select *
-from mvc2
-where row_num > 1;
-
-Delete 
-from mvc2
-where row_num > 1;
 
 select *
 from mvc2
@@ -146,7 +133,7 @@ from mvc2;
 
 Select *
 from mvc2
-where TIME is null;
+where DATE is null;
 
 -- Removing Unwanted Columns
 alter table mvc2
@@ -177,8 +164,7 @@ drop column DISABILITY,
 drop column HOOD_140,
 drop column NEIGHBOURHOOD_140,
 drop column TRAFFCTL,
-drop column IMPACTYPE,
-drop column row_num;
+drop column IMPACTYPE;
 
 select *
 from mvc2;
