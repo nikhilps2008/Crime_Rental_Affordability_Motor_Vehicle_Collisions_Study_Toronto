@@ -48,7 +48,10 @@ Data cleaning and exploratory data analysis were performed using SQL.
 
 ## Visualizations
 Dashboards and visualizations were created using Tableau. The following assets are included:
+
 - **Figures Folder**: PNG images of the Tableau dashboards.
+  -![Dashboard 1](reports/figures/Rent-Crime-Collision-Dashboard-1.png)
+  -![Dashboard 2](reports/figures/Rent-Crime-Collision-Dashboard-2.png)
 
 - **Videos Folder**: Videos demonstrating the Tableau dashboards.
 
