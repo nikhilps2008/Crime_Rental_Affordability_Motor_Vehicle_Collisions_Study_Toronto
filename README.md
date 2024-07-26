@@ -1,4 +1,8 @@
-# Crime Collision Rent Study - Toronto
+<h1 align="center">Crime Collision Rent Study - Toronto</h1>
+
+<p align="center">
+  <img src="reports/figures/toronto.png" alt="Toronto Skyline">
+</p>
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
