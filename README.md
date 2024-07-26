@@ -1,4 +1,4 @@
-<h1 align="center">Crime Collision Rent Study - Toronto</h1>
+<h1 align="center">Crime Collision Rent Study-Toronto</h1>
 
 <p align="center">
   <img src="reports/figures/toronto.png" alt="Toronto Skyline">
