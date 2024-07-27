@@ -58,6 +58,7 @@ Dashboards and visualizations were created using Tableau. The following assets a
   - **Dashboard Overview:**![Dashboard 2](reports/figures/Rent-Crime-Collision-Dashboard-2.png)
 
 - **Videos Folder**: Videos demonstrating the Tableau dashboards.
+  - **Dashboard Demo:**
 
 https://github.com/user-attachments/assets/b6df0543-24b1-4098-98bc-8bfd5776645c
 ## Conclusion
