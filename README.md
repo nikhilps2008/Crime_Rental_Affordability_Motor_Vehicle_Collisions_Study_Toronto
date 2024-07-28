@@ -51,7 +51,7 @@ The project follows the Cookiecutter Data Science structure and includes the fol
 Data cleaning and exploratory data analysis were performed using SQL.
 
 ## Visualizations
-Dashboards and visualizations were created using Tableau. The following assets are included:
+Dashboards and visualizations were created using Tableau. Custom SQL queries were used to make the visualization. The following assets are included:
 
 - **Figures Folder**: PNG images of the Tableau dashboards.
   - **Dashboard Overview:**![Dashboard 1](reports/figures/Rent-Crime-Collision-Dashboard-1.png)
