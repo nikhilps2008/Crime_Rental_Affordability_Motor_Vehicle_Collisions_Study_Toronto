@@ -60,7 +60,7 @@ Dashboards and visualizations were created using Tableau. The following assets a
 - **Videos Folder**: Videos demonstrating the Tableau dashboards.
   - **Dashboard Demo:**
 
-https://github.com/user-attachments/assets/b6df0543-24b1-4098-98bc-8bfd5776645c
+https://github.com/user-attachments/assets/03c3ecfd-ae5f-4588-8e49-de7ed5aef08e
 ## Conclusion
 The analysis provides valuable insights into crime trends, rental prices, and traffic collisions in Toronto. By integrating and visualizing these datasets, the project highlights key patterns and trends that can inform urban planning, safety measures, and policy decisions. The interactive dashboards offer a user-friendly interface for exploring the data and making data-driven decisions.
 
