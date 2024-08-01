@@ -41,7 +41,7 @@ The project follows the Cookiecutter Data Science structure and includes the fol
   - `eda/` - SQL queries for exploratory data analysis
   
 - **`reports/`**: Contains project reports and visualizations.
-  - `figures/` - PNG photos of the Tableau dashboards
+  - `figures/` - PNG photos of the Tableau dashboards.
   - `videos/` - Videos demonstrating the Tableau dashboards
   - `tableau/` - Contains tableau worksheets and dashboards.
 
